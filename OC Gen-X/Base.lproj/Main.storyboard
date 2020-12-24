@@ -714,7 +714,7 @@
                 <customObject id="ISc-R2-Unv" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <viewController id="7uK-TB-ntZ" customClass="MainVC" customModule="OC_Gen_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" misplaced="YES" id="ZeK-sO-E8j">
-                        <rect key="frame" x="0.0" y="0.0" width="1093" height="613"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1093" height="663"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wcy-uw-NdK">
@@ -744,7 +744,7 @@
                                 </textFieldCell>
                             </textField>
                             <tabView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UIh-RX-3Ag">
-                                <rect key="frame" x="-6" y="146" width="1107" height="423"/>
+                                <rect key="frame" x="-6" y="196" width="1107" height="423"/>
                                 <font key="font" metaFont="system"/>
                                 <tabViewItems>
                                     <tabViewItem label="系统CPU类型" identifier="" id="pdY-nd-ywG">
@@ -996,11 +996,11 @@
                                                     <tabViewItems>
                                                         <tabViewItem label="Essential（必须）" identifier="" id="XhX-Gy-OsH">
                                                             <view key="view" id="YQt-GO-VSt">
-                                                                <rect key="frame" x="10" y="33" width="1085" height="82"/>
+                                                                <rect key="frame" x="10" y="33" width="1085" height="160"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <subviews>
                                                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JsS-MV-XBV">
-                                                                        <rect key="frame" x="8" y="45" width="338" height="18"/>
+                                                                        <rect key="frame" x="8" y="123" width="338" height="18"/>
                                                                         <string key="toolTip">An open source kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS.  Boot Args: Add -liludbg to enable debug printing (available in DEBUG binaries).
 Add -liludbgall to enable debug printing in Lilu and all loaded plugins (available in DEBUG binaries).
 Add -liluoff to disable Lilu.
@@ -1019,7 +1019,7 @@ Add liludump=N to let Lilu DEBUG version dump log to /var/log/Lilu_VERSION_KERN_
                                                                         </buttonCell>
                                                                     </button>
                                                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lbr-dO-TxB">
-                                                                        <rect key="frame" x="8" y="19" width="271" height="18"/>
+                                                                        <rect key="frame" x="8" y="97" width="271" height="18"/>
                                                                         <string key="toolTip">Advanced Apple SMC emulator in the kernel. Requires Lilu for full functioning.  Boot arguments
 Add -vsmcdbg to enable debug printing (available in DEBUG binaries).
 Add -vsmcoff to switch off all the Lilu enhancements.
@@ -1747,8 +1747,8 @@ Add watchdog=0 to disable WatchDog timer (if you get accidental reboots).</strin
                                     </tabViewItem>
                                 </tabViewItems>
                             </tabView>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iLc-rs-VxX">
-                                <rect key="frame" x="18" y="33" width="1057" height="16"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iLc-rs-VxX">
+                                <rect key="frame" x="19" y="38" width="1057" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="用户注意事项：该应用程序未得到Opencore开发团队的认可。" id="MCU-YO-XvG">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
@@ -1764,9 +1764,18 @@ Add watchdog=0 to disable WatchDog timer (if you get accidental reboots).</strin
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JJY-uW-evJ">
-                                <rect key="frame" x="894" y="139" width="181" height="16"/>
+                                <rect key="frame" x="894" y="189" width="181" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="当前 OpenCore version: 0.6.4" id="c09-ms-Iid">
                                     <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eAl-Ac-JZb" userLabel="汉化声明">
+                                <rect key="frame" x="18" y="152" width="1057" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="本汉化由Steven修改 github地址:https://github.com/stevenliuit/OC-Gen-X" id="Smz-OT-vbi">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -1864,7 +1873,7 @@ Add watchdog=0 to disable WatchDog timer (if you get accidental reboots).</strin
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="75.5" y="1117.5"/>
+            <point key="canvasLocation" x="75.5" y="1142.5"/>
         </scene>
     </scenes>
     <resources>
