@@ -1775,7 +1775,7 @@ Add watchdog=0 to disable WatchDog timer (if you get accidental reboots).</strin
                                 <rect key="frame" x="606" y="154" width="470" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" truncatesLastVisibleLine="YES" selectable="YES" alignment="right" id="Smz-OT-vbi">
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system"/>
                                     <string key="title">本汉化由Steven修改
  github地址:https://github.com/stevenliuit/OC-Gen-X</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
